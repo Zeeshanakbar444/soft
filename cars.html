@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rentals - StayNGo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Bar Start -->
+    <div class="header-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-4">
+                <a href="mailto:support@stayngo.com" class="top-link-item"><i class="bi bi-envelope"></i>
+                    support@stayngo.com</a>
+                <a href="mailto:contact@stayngo.com" class="top-link-item"><i class="bi bi-envelope"></i>
+                    contact@stayngo.com</a>
+                <a href="mailto:info@stayngo.com" class="top-link-item"><i class="bi bi-envelope"></i>
+                    info@stayngo.com</a>
+            </div>
+            <div class="d-flex gap-3 align-items-center">
+                <a href="#" class="top-language-switcher">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English Flag">
+                    EN
+                </a>
+                <div class="top-link-item cursor-pointer text-decoration-none"><i class="bi bi-person"></i> To Enter
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/stayngo_icon.png" alt="StayNGo Logo" class="navbar-logo-img">
+                <span class="logo-brand">Stay<span class="logo-n">N</span>Go</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hotels.html">Hotels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="flights.html">Flights</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="cars.html">Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bus-train.html">Trains & Buses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ferries.html">Cruises</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="assistant.html">AI Assistant</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-3 align-items-center flex-nowrap">
+                    <a href="auth.html" class="btn-login text-decoration-none fw-bold">Login</a>
+                    <a href="auth.html" class="btn-signup-brand text-decoration-none">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Car Rentals</h1>
+                <p class="page-subtitle">Find the perfect car for your road trip. Best prices guaranteed.</p>
+            </div>
+        </div>
+
+        <div class="container mb-5">
+            <!-- Search Section -->
+            <div class="card-custom p-4 mb-5">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label">Pick-up Location</label>
+                        <input type="text" class="form-control" placeholder="City or Airport">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Pick-up Date</label>
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Drop-off Date</label>
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button class="btn btn-primary w-100 py-2">Search Cars</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <h3 class="mb-4">Available Cars</h3>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom">
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&h=500&fit=crop"
+                            class="card-img-top" alt="Economy Car" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Economy (Toyota Yaris or similar)</h5>
+                            <p class="card-text text-muted mb-3"><i class="bi bi-people"></i> 4 Seats | <i
+                                    class="bi bi-briefcase"></i> 2 Bags</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="mb-0 text-primary">$35/day</h4>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                            <small class="redirect-notice">Redirects to partner site.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom">
+                        <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&h=500&fit=crop"
+                            class="card-img-top" alt="SUV" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">SUV (Ford Escape or similar)</h5>
+                            <p class="card-text text-muted mb-3"><i class="bi bi-people"></i> 5 Seats | <i
+                                    class="bi bi-briefcase"></i> 3 Bags</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="mb-0 text-primary">$65/day</h4>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                            <small class="redirect-notice">Redirects to partner site.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom">
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&h=500&fit=crop"
+                            class="card-img-top" alt="Luxury Car" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury (BMW 3 Series or similar)</h5>
+                            <p class="card-text text-muted mb-3"><i class="bi bi-people"></i> 5 Seats | <i
+                                    class="bi bi-briefcase"></i> 2 Bags</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="mb-0 text-primary">$120/day</h4>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                            <small class="redirect-notice">Redirects to partner site.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <a class="navbar-brand mb-3 d-flex align-items-center" href="index.html">
+                        <img src="assets/stayngo_icon.png" alt="StayNGo Logo" class="navbar-logo-img me-2">
+                        <span class="logo-brand text-white">Stay<span class="logo-n">N</span>Go</span>
+                    </a>
+                    <p>StayNGo acts as an affiliate platform. All bookings, payments, tickets, and customer service are
+                        handled directly by our travel partners.</p>
+                    <div class="footer-social mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="flights.html">Flights</a></li>
+                        <li><a href="hotels.html">Hotels</a></li>
+                        <li><a href="cars.html">Car Rentals</a></li>
+                        <li><a href="ferries.html">Cruises</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Legal & Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="legal.html">Legal & Policies</a></li>
+                        <li><a href="legal.html#terms">Terms of Service</a></li>
+                        <li><a href="legal.html#privacy">Privacy Policy</a></li>
+                    </ul>
+                    <p class="mt-3 small text-white-50">
+                        Insurance and eSIM services are provided by third-party partners. StayNGo does not underwrite
+                        insurance or provide telecom services.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 StayNGo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AI Chat Bot Widget -->
+    <a href="assistant.html" class="ai-chatbot-widget">
+        <div class="ai-chat-bubble">How can i help you today?</div>
+        <div class="ai-avatar-wrapper">
+            <img src="assets/ai_assistant_avatar.png" alt="AI Assistant">
+        </div>
+    </a>
+</body>
+
+</html>
