@@ -24,6 +24,7 @@ body {
 
 main {
     flex: 1;
+    margin-top: 30px;
 }
 
 /* Brand Components */
@@ -153,7 +154,7 @@ main {
 .hero-wrapper {
     position: relative;
     background: linear-gradient(rgba(var(--brand-dark-green-rgb), 0.7), rgba(var(--brand-dark-green-rgb), 0.7)),
-        url('https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=1600&h=900&fit=crop') center/cover;
+        url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1600&h=900&fit=crop') center/cover;
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -161,6 +162,7 @@ main {
     justify-content: center;
     color: var(--text-white);
     text-align: center;
+    margin-top: 30px;
 }
 
 .hero-badge-glass {
@@ -597,6 +599,13 @@ footer a:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s, box-shadow 0.3s;
     border-top: 3px solid var(--emerald-green);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.card-custom .card-body {
+    margin-top: 20px;
+    padding: 0 !important;
 }
 
 .card-custom:hover {
@@ -791,8 +800,8 @@ footer a:hover {
     .ai-chat-bubble {
         padding: 8px 15px;
         font-size: 12px;
-        display: none;
-        /* Hide bubble on mobile to save space */
+        display: block;
+        /* Show bubble on mobile */
     }
 
     .ai-avatar-wrapper {
@@ -807,4 +816,15 @@ footer a:hover {
     .newsletter-card {
         padding: 30px 20px;
     }
+}
+
+
+
+
+
+
+.btn-signup {
+    align-items: end;
+    display: flex;
+    justify-content: end;
 }

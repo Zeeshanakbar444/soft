@@ -117,6 +117,51 @@
       cursor: pointer;
       font-weight: 600;
     }
+
+    @media (max-width: 768px) {
+      .auth-container {
+        padding: 0 15px;
+      }
+
+      .modal-content {
+        min-height: auto !important;
+      }
+
+      .flip-inner {
+        height: auto !important;
+        transform: none !important;
+        transform-style: flat !important;
+      }
+
+      .flip-front,
+      .flip-back {
+        position: relative !important;
+        inset: auto !important;
+        backface-visibility: visible !important;
+        transform: none !important;
+      }
+
+      .flip-inner:not(.flipped) .flip-back {
+        display: none !important;
+      }
+
+      .flip-inner.flipped .flip-front {
+        display: none !important;
+      }
+
+      .brand-side {
+        padding: 30px 20px !important;
+        text-align: center;
+      }
+
+      .form-side {
+        padding: 30px 20px !important;
+      }
+
+      .form-side .d-flex.gap-2 {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 

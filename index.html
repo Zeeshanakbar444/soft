@@ -323,10 +323,15 @@
         .service-card {
             background: white;
             border-radius: 16px;
-            padding: 35px;
+            padding: 20px;
             height: 100%;
             transition: transform 0.3s, box-shadow 0.3s;
             border: 1px solid transparent;
+            margin-top: 20px;
+        }
+
+        .service-card h3 {
+            margin-top: 20px;
         }
 
         .service-card:hover {
@@ -461,6 +466,8 @@
             height: 300px;
             cursor: pointer;
             transition: transform 0.3s;
+            margin-top: 20px;
+            padding: 20px;
         }
 
         .destination-card:hover {
@@ -537,10 +544,15 @@
         .feature-card {
             background: white;
             border-radius: 16px;
-            padding: 40px;
+            padding: 20px;
             text-align: center;
             height: 100%;
             transition: transform 0.3s, box-shadow 0.3s;
+            margin-top: 20px;
+        }
+
+        .feature-card h4 {
+            margin-top: 20px;
         }
 
         .feature-card:hover {
@@ -593,6 +605,8 @@
             height: 280px;
             cursor: pointer;
             transition: transform 0.3s;
+            margin-top: 20px;
+            padding: 20px;
         }
 
         .destination-grid-card:hover {
@@ -1449,12 +1463,24 @@
 
         <!-- Service Tabs Row -->
         <div class="service-tabs-row">
-            <div class="service-tab-item active"><i class="bi bi-building"></i> Hotels</div>
-            <div class="service-tab-item"><i class="bi bi-airplane"></i> Flights</div>
-            <div class="service-tab-item"><i class="bi bi-train-front"></i> Trains</div>
-            <div class="service-tab-item"><i class="bi bi-bus-front"></i> Buses</div>
-            <div class="service-tab-item"><i class="bi bi-car-front"></i> Cars</div>
-            <div class="service-tab-item"><i class="bi bi-water"></i> Cruises</div>
+            <a href="./hotels.html">
+                <div class="service-tab-item active"><i class="bi bi-building"></i> Hotels</div>
+            </a>
+            <a href="./flights.html">
+                <div class="service-tab-item"><i class="bi bi-airplane"></i> Flights</div>
+            </a>
+            <a href="./bus-train.html">
+                <div class="service-tab-item"><i class="bi bi-train-front"></i> Trains</div>
+            </a>
+            <a href="./bus-train.html">
+                <div class="service-tab-item"><i class="bi bi-bus-front"></i> Buses</div>
+            </a>
+            <a href="./cars.html">
+                <div class="service-tab-item"><i class="bi bi-car-front"></i> Cars</div>
+            </a>
+            <a href="./ferries.html">
+                <div class="service-tab-item"><i class="bi bi-water"></i> Cruises</div>
+            </a>
         </div>
 
         <!-- Main Search Card -->
@@ -1628,7 +1654,7 @@
             <div class="row g-4 mt-4">
                 <div class="col-lg-3 col-md-6">
                     <div class="trending-exact-card">
-                        <img src="https://images.unsplash.com/photo-1580641355490-62283a005085?w=600&h=400&fit=crop"
+                        <img src="https://images.unsplash.com/photo-1588535684923-900727736ac0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             class="trending-img" alt="Lisbon">
                         <div class="trending-city">Lisbon</div>
                         <a href="#" class="btn-explore-gold">Explore</a>
@@ -1652,7 +1678,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="trending-exact-card">
-                        <img src="https://images.unsplash.com/photo-1528181304800-2f143c8c8ad8?w=600&h=400&fit=crop"
+                        <img src="https://plus.unsplash.com/premium_photo-1661963646506-e822afdd50cb?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             class="trending-img" alt="Bangkok">
                         <div class="trending-city">Bangkok</div>
                         <a href="#" class="btn-explore-gold">Explore</a>
@@ -1813,7 +1839,7 @@
                 </div>
             </div>
 
-            <div class="text-center mt-5">
+            <div class="btn-signup text-center mt-5">
                 <button class="btn-signup">View All Destinations →</button>
             </div>
         </div>
