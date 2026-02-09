@@ -828,3 +828,8 @@ footer a:hover {
     display: flex;
     justify-content: end;
 }
+
+
+.link{
+    text-decoration: none;
+}
