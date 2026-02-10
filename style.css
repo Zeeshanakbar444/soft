@@ -24,7 +24,7 @@ body {
 
 main {
     flex: 1;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 /* Brand Components */
@@ -162,7 +162,6 @@ main {
     justify-content: center;
     color: var(--text-white);
     text-align: center;
-    margin-top: 30px;
 }
 
 .hero-badge-glass {
@@ -248,7 +247,9 @@ main {
     position: relative;
     border: 1px solid var(--border-light);
     border-radius: 12px;
-    padding: 12px 15px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
 }
 
 .search-field-input-box i {
@@ -259,7 +260,8 @@ main {
 .search-field-input-box input {
     border: none;
     outline: none;
-    width: calc(100% - 30px);
+    flex: 1;
+    background: transparent;
 }
 
 .btn-search-brand {
@@ -287,7 +289,7 @@ main {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     height: 100%;
 }
 
@@ -443,7 +445,7 @@ main {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 20px;
+    padding: 25px;
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
     color: white;
 }
@@ -600,12 +602,17 @@ footer a:hover {
     transition: transform 0.3s, box-shadow 0.3s;
     border-top: 3px solid var(--emerald-green);
     margin-top: 20px;
-    padding: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card-custom .card-body {
-    margin-top: 20px;
-    padding: 0 !important;
+    padding: 25px !important;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-custom:hover {
@@ -820,6 +827,27 @@ footer a:hover {
     .newsletter-card {
         padding: 30px 20px;
     }
+
+    .newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+        background: transparent;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+        border-radius: 10px;
+        background: white;
+        padding: 15px;
+    }
+
+    .newsletter-form .btn-subscribe {
+        width: 100%;
+        border-radius: 10px;
+        justify-content: center;
+    }
 }
 
 
@@ -828,11 +856,56 @@ footer a:hover {
 
 
 .btn-signup {
-    align-items: end;
-    display: flex;
-    justify-content: end;
+    padding: 0;
 }
 
+.btn-luxury-brand {
+    background: var(--emerald-green);
+    color: white !important;
+    border: 2px solid var(--brand-gold);
+    padding: 12px 35px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(31, 122, 92, 0.3);
+}
+
+.btn-luxury-brand:hover {
+    background: var(--brand-dark-green);
+    border-color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 61, 41, 0.4);
+}
+
+
+.auth-wrapper,
+.assistant-hero {
+    margin-top: 40px;
+}
+
+.btn-read-more {
+    color: var(--brand-gold) !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-top: auto;
+    padding-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-read-more:hover {
+    color: var(--brand-dark-green) !important;
+    transform: translateX(5px);
+}
 
 .link {
     text-decoration: none;

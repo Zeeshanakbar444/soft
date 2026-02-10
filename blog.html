@@ -87,8 +87,12 @@
                             <div class="text-primary small fw-bold mb-2">DESTINATIONS</div>
                             <h4 class="card-title mb-3">10 Hidden Gems in Europe You Must Visit</h4>
                             <p class="card-text text-muted">Discover the secret spots that most tourists miss, from
-                                charming villages in France to secluded beaches in Greece.</p>
-                            <a href="#" class="btn btn-link px-0 text-decoration-none fw-bold">Read More <i
+                                charming villages in France to secluded beaches in Greece. <span class="more-content"
+                                    style="display:none">Explore the hidden alleys of Colmar, the dramatic cliffs of the
+                                    Algarve, and the ancient ruins tucked away in the Peloponnese. These destinations
+                                    offer a unique glimpse into European culture without the crowds.</span></p>
+                            <a href="javascript:void(0)"
+                                class="btn btn-link px-0 text-decoration-none fw-bold btn-read-more">Read More <i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -103,8 +107,12 @@
                             <div class="text-primary small fw-bold mb-2">TRAVEL TIPS</div>
                             <h4 class="card-title mb-3">How to Travel on a Budget in 2024</h4>
                             <p class="card-text text-muted">Practical tips and tricks to save money on flights,
-                                accommodation, and activities without compromising on experience.</p>
-                            <a href="#" class="btn btn-link px-0 text-decoration-none fw-bold">Read More <i
+                                accommodation, and activities without compromising on experience. <span
+                                    class="more-content" style="display:none">Learn how to use credit card points, find
+                                    the best local street food, and navigate public transport like a pro. Traveling on a
+                                    budget doesn't mean missing out; it means traveling smarter.</span></p>
+                            <a href="javascript:void(0)"
+                                class="btn btn-link px-0 text-decoration-none fw-bold btn-read-more">Read More <i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -119,8 +127,12 @@
                             <div class="text-primary small fw-bold mb-2">LIFESTYLE</div>
                             <h4 class="card-title mb-3">The Ultimate Packing List for Digital Nomads</h4>
                             <p class="card-text text-muted">Everything you need to work and travel remotely, from
-                                essential tech gear to versatile clothing options.</p>
-                            <a href="#" class="btn btn-link px-0 text-decoration-none fw-bold">Read More <i
+                                essential tech gear to versatile clothing options. <span class="more-content"
+                                    style="display:none">We cover the best noise-canceling headphones, lightweight
+                                    laptops, and ergonomic accessories to keep you productive in any co-working space or
+                                    cafe. Stay connected and comfortable on the go.</span></p>
+                            <a href="javascript:void(0)"
+                                class="btn btn-link px-0 text-decoration-none fw-bold btn-read-more">Read More <i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -186,6 +198,23 @@
     <!-- Footer End -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.btn-read-more').forEach(button => {
+            button.addEventListener('click', function () {
+                const cardBody = this.closest('.card-body');
+                const moreContent = cardBody.querySelector('.more-content');
+                const isHidden = moreContent.style.display === 'none';
+
+                if (isHidden) {
+                    moreContent.style.display = 'inline';
+                    this.innerHTML = 'See Less <i class="bi bi-arrow-up"></i>';
+                } else {
+                    moreContent.style.display = 'none';
+                    this.innerHTML = 'Read More <i class="bi bi-arrow-right"></i>';
+                }
+            });
+        });
+    </script>
     <!-- AI Chat Bot Widget -->
     <a href="assistant.html" class="ai-chatbot-widget">
         <div class="ai-chat-bubble">How can i help you today?</div>
