@@ -624,6 +624,7 @@ footer a:hover {
     display: flex;
     gap: 12px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .filter-pill {
@@ -727,6 +728,7 @@ footer a:hover {
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     background-color: #f0f0f0;
+    flex-shrink: 0;
 }
 
 .ai-avatar-wrapper img {
@@ -802,6 +804,8 @@ footer a:hover {
         font-size: 12px;
         display: block;
         /* Show bubble on mobile */
+        white-space: normal;
+        max-width: 200px;
     }
 
     .ai-avatar-wrapper {
@@ -830,6 +834,6 @@ footer a:hover {
 }
 
 
-.link{
+.link {
     text-decoration: none;
 }
