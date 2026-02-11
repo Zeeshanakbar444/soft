@@ -179,10 +179,25 @@
           info@stayngo.com</a>
       </div>
       <div class="d-flex gap-3 align-items-center">
-        <a href="#" class="top-language-switcher">
-          <img src="https://flagcdn.com/w40/gb.png" alt="English Flag">
-          EN
-        </a>
+        <div class="dropdown">
+          <a href="#" class="top-language-switcher dropdown-toggle" data-bs-toggle="dropdown">
+            <img src="https://flagcdn.com/w40/gb.png" alt="English Flag"> EN
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark shadow-sm">
+            <li><a class="dropdown-item active d-flex align-items-center" href="#"><img
+                  src="https://flagcdn.com/w20/gb.png" class="me-2" alt="UK"> English (UK)</a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#"><img src="https://flagcdn.com/w20/pk.png"
+                  class="me-2" alt="Pakistan"> Pakistan (Urdu)</a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#"><img src="https://flagcdn.com/w20/us.png"
+                  class="me-2" alt="USA"> United States</a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#"><img src="https://flagcdn.com/w20/ae.png"
+                  class="me-2" alt="UAE"> Arabic (UAE)</a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#"><img src="https://flagcdn.com/w20/sa.png"
+                  class="me-2" alt="Saudi Arabia"> Arabic (SA)</a></li>
+            <li><a class="dropdown-item d-flex align-items-center" href="#"><img src="https://flagcdn.com/w20/fr.png"
+                  class="me-2" alt="France"> French (FR)</a></li>
+          </ul>
+        </div>
         <div class="top-link-item cursor-pointer text-decoration-none"><i class="bi bi-person"></i> To Enter
         </div>
       </div>
@@ -281,7 +296,21 @@
                     <input type="password" class="form-control mb-3" placeholder="Password">
                     <button class="btn btn-brand w-100 py-2">Create Account</button>
 
-                    <p class="mt-4 text-center mb-0">
+                    <div class="divider d-flex align-items-center mt-4 mb-3">
+                      <hr class="flex-grow-1"><span class="mx-2 small text-muted">Or signup with</span>
+                      <hr class="flex-grow-1">
+                    </div>
+
+                    <div class="d-flex gap-2 mb-3">
+                      <button class="btn btn-outline-primary flex-grow-1 py-1" style="font-size: 13px;"><i
+                          class="bi bi-facebook me-1"></i> Facebook</button>
+                      <button class="btn btn-outline-dark flex-grow-1 py-1" style="font-size: 13px;"><i
+                          class="bi bi-apple me-1"></i> Apple</button>
+                      <button class="btn btn-outline-danger flex-grow-1 py-1" style="font-size: 13px;"><i
+                          class="bi bi-google me-1"></i> Google</button>
+                    </div>
+
+                    <p class="mt-2 text-center mb-0">
                       Already have an account?
                       <span class="switch-link" onclick="flip()">Login</span>
                     </p>
@@ -354,6 +383,7 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/language-persistence.js"></script>
 
   <script>
     function flip() {
@@ -363,9 +393,9 @@
 
   <!-- AI Chat Bot Widget -->
   <a href="assistant.html" class="ai-chatbot-widget">
-    <div class="ai-chat-bubble">How can i help you today?</div>
+    <div class="ai-chat-bubble">Hi i'm Luna , How can i help you today?</div>
     <div class="ai-avatar-wrapper">
-      <img src="assets/ai_assistant_avatar.png" alt="AI Assistant">
+      <img src="assets/ai_assistant_avatar.jfif" alt="AI Assistant">
     </div>
   </a>
 </body>

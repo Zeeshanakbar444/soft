@@ -1391,25 +1391,6 @@
                 padding: 20px;
             }
 
-            .ai-chatbot-widget {
-                bottom: 20px;
-                right: 20px;
-                gap: 8px;
-            }
-
-            .ai-chat-bubble {
-                padding: 8px 15px;
-                font-size: 12px;
-                display: block;
-                white-space: normal;
-                max-width: 200px;
-            }
-
-            .ai-avatar-wrapper {
-                width: 60px;
-                height: 60px;
-                flex-shrink: 0;
-            }
 
         }
     </style>
@@ -1428,10 +1409,27 @@
                     info@stayngo.com</a>
             </div>
             <div class="d-flex gap-3 align-items-center">
-                <a href="#" class="top-language-switcher">
-                    <img src="https://flagcdn.com/w40/gb.png" alt="English Flag">
-                    EN
-                </a>
+                <div class="dropdown">
+                    <a href="#" class="top-language-switcher dropdown-toggle" data-bs-toggle="dropdown">
+                        <img src="https://flagcdn.com/w40/gb.png" alt="English Flag"> EN
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark shadow-sm">
+                        <li><a class="dropdown-item active d-flex align-items-center" href="#"><img
+                                    src="https://flagcdn.com/w20/gb.png" class="me-2" alt="UK"> English (UK)</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center" href="#"><img
+                                    src="https://flagcdn.com/w20/pk.png" class="me-2" alt="Pakistan"> Pakistan
+                                (Urdu)</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center" href="#"><img
+                                    src="https://flagcdn.com/w20/us.png" class="me-2" alt="USA"> United States</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center" href="#"><img
+                                    src="https://flagcdn.com/w20/ae.png" class="me-2" alt="UAE"> Arabic (UAE)</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center" href="#"><img
+                                    src="https://flagcdn.com/w20/sa.png" class="me-2" alt="Saudi Arabia"> Arabic
+                                (SA)</a></li>
+                        <li><a class="dropdown-item d-flex align-items-center" href="#"><img
+                                    src="https://flagcdn.com/w20/fr.png" class="me-2" alt="France"> French (FR)</a></li>
+                    </ul>
+                </div>
                 <div class="top-link-item cursor-pointer text-decoration-none"><i class="bi bi-person"></i> To Enter
                 </div>
             </div>
@@ -1865,66 +1863,7 @@
         </div>
     </section>
 
-    <!-- AI Assistant Section -->
-    <section class="ai-assistant-section" id="ai">
-        <div class="container">
-            <div class="ai-content">
-                <div>
-                    <div class="ai-badge">
-                        <i class="bi bi-stars"></i>
-                        Powered by Advanced AI
-                    </div>
-                    <h2 class="ai-title">Meet Luna, Your AI Travel <span>Assistant</span></h2>
-                    <p class="ai-description">
-                        Available 24/7 to help you plan, book, and manage your entire journey.<br>
-                        From personalized recommendations to instant support, Luna makes<br>
-                        travel effortless.
-                    </p>
-                    <div class="ai-features">
-                        <div class="ai-feature-item">24/7 Instant Support</div>
-                        <div class="ai-feature-item">Multi-language Support</div>
-                        <div class="ai-feature-item">Smart Recommendations</div>
-                        <div class="ai-feature-item">Real-time Updates</div>
-                    </div>
-                </div>
 
-                <div class="ai-chat-demo">
-                    <div class="chat-header">
-                        <div class="chat-bot-icon">
-                            <img src="assets/ai_assistant_avatar.png" alt="Luna Avatar"
-                                style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
-                        </div>
-                        <div class="instant-badge">Instant Responses</div>
-                    </div>
-
-                    <div class="chat-message">
-                        Hi there! 👋 I'm Luna, your AI travel assistant. How can I help you plan your next adventure?
-                    </div>
-
-                    <div class="chat-message bot">
-                        <p style="margin-bottom: 10px;">Perfect! I found some amazing luxury hotels in Paris. Here are
-                            my top recommendations:</p>
-                        <div class="hotel-recommendations">
-                            <div class="hotel-item">
-                                <strong><i class="bi bi-star-fill" style="color: var(--accent-gold);"></i> 5-Star
-                                    Luxury</strong>
-                                <div>The Ritz Paris</div>
-                                <div class="price">From €980/night <span class="badge">Premium</span></div>
-                            </div>
-                            <div class="hotel-item">
-                                <strong><i class="bi bi-star-fill" style="color: var(--accent-gold);"></i>
-                                    Premium</strong>
-                                <div>Le Bristol Paris</div>
-                                <div class="price">From €850/night</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <input type="text" class="chat-input" placeholder="Type your message...">
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
@@ -1993,7 +1932,7 @@
 
                     <div class="form-group">
                         <label>Message</label>
-                        <textarea placeholder="How can we help you?"></textarea>
+                        <textarea placeholder=" How can we help you?"></textarea>
                     </div>
 
                     <button class="btn-submit">
@@ -2188,6 +2127,7 @@
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/language-persistence.js"></script>
 
     <script>
         // Search Tab Switching
@@ -2224,9 +2164,9 @@
     </script>
     <!-- AI Chat Bot Widget -->
     <a href="assistant.html" class="ai-chatbot-widget">
-        <div class="ai-chat-bubble">How can i help you today?</div>
+        <div class="ai-chat-bubble">Hi i'm Luna , How can i help you today?</div>
         <div class="ai-avatar-wrapper">
-            <img src="assets/ai_assistant_avatar.png" alt="AI Assistant">
+            <img src="assets/ai_assistant_avatar.jfif" alt="AI Assistant">
         </div>
     </a>
 </body>
