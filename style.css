@@ -24,7 +24,6 @@ body {
 
 main {
     flex: 1;
-    margin-top: 40px;
 }
 
 /* Brand Components */
@@ -135,7 +134,7 @@ main {
 }
 
 .navbar-logo-img {
-    height: 40px;
+    height: 50px;
     width: auto;
     object-fit: contain;
 }
@@ -185,7 +184,7 @@ main {
 .hero-wrapper {
     position: relative;
     background: linear-gradient(rgba(var(--brand-dark-green-rgb), 0.7), rgba(var(--brand-dark-green-rgb), 0.7)),
-        url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1600&h=900&fit=crop') center/cover;
+        url('assets/hero-bg-updated.png') center/cover;
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -223,12 +222,10 @@ main {
 /* Page Header Wrapper for Subpages */
 .page-header-wrapper {
     background: linear-gradient(rgba(var(--brand-dark-green-rgb), 0.7), rgba(var(--brand-dark-green-rgb), 0.7)),
-        url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1600&h=900&fit=crop') center/cover;
+        url('assets/hero-bg-updated.png') center/cover;
     padding: 80px 0;
     color: var(--text-white) !important;
     text-align: center;
-    margin-top: -40px;
-    /* Offset main margin-top */
     margin-bottom: 40px;
 }
 
